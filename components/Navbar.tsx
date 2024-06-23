@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import logo from '@/public/logo.svg'
 import Link from "next/link";
+import { BsDiscord, BsTwitterX } from "react-icons/bs";
+import { BiLogoTelegram } from "react-icons/bi";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +15,7 @@ export default function Navbar() {
     { title: "Home", path: "/" },
     { title: "About Us", path: "#about-us" },
     { title: "Whitepaper", path: "/whitepaper" },
-    { title: "Roadmap", path: "#road-map" },
+    { title: "Roadmap", path: "#roadmap" },
     { title: "FAQs", path: "#faqs" },
   ];
 
@@ -115,7 +117,25 @@ export default function Navbar() {
                     );
                   })}
                 </ul>
-                <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
+                <div className="items-center justify-end mt-6 md:mt-0 flex flex-row gap-x-4">
+                  <a
+                    href='https://x.com/gepstoken'
+                    className="flex items-center gap-x-1 py-2 px-2 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
+                  >
+                    <BsTwitterX size={20}/>
+                  </a>
+                  <a
+                    href='https://discord.com/invite/xg9uDTd6'
+                    className="flex items-center gap-x-1 py-2 px-2 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
+                  >
+                    <BsDiscord size={20}/>
+                  </a>
+                  <a
+                    href='https://t.me/gepstoken'
+                    className="flex items-center gap-x-1 py-2 px-2 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
+                  >
+                    <BiLogoTelegram size={20}/>
+                  </a>
                   <a
                     href="javascript:void(0)"
                     className="flex items-center justify-center gap-x-1 py-3 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "

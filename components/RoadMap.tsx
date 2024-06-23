@@ -3,9 +3,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
 import { TracingBeam } from "./ui/tracing-beam";
-import { twMerge } from "tailwind-merge";
+ 
+import { cn } from "@/utils/cn"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
-export function RoadMap() {
+type CardProps = React.ComponentProps<typeof Card>
+
+export function RoadMap({ className, ...props }: CardProps) {
   return (
     <div id="roadmap">
       <LampContainer className="-mb-20">
@@ -24,15 +36,39 @@ export function RoadMap() {
       </LampContainer>
       <TracingBeam className="px-6 relative z-0 -mt-96 -top-24">
         <div className="max-w-2xl mx-auto antialiased relative">
-          {dummyContent.map((item, index) => (
+          {roadmapText.map(({ title, heading }, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <p className={"text-xl mb-4"}>
-                {item.title}
-              </p>
-  
-              <div className="text-sm  prose prose-sm dark:prose-invert">
-                {item.description}
-              </div>
+              <Card className={cn("w-[840px]", className)} {...props}>
+                <CardHeader>
+                  <CardTitle>{title}</CardTitle>
+                  <CardDescription>
+                    Percent Completion
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                  {
+                    heading.map((head, headIndex) => (
+                      <div className=" flex items-center space-x-4 rounded-md border p-4" key={headIndex}>
+                        <div className="flex-1 space-y-1">
+                          <p className="text-md font-medium leading-none">
+                            {head.title}
+                          </p>
+                          {Object.entries(head.line).map(([key, value]) => (
+                            <div key={key} className="mt-2 grid grid-cols-[25px_1fr] items-start pt-2 last:mb-0 last:pb-0">
+                              <span className="flex h-2 w-2 translate-y-1 rounded-full bg-green-500" />
+                              <div className="space-y-1">
+                                <p className="text-sm font-medium leading-none">
+                                  {value}
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))
+                  }
+                </CardContent>
+              </Card>
             </div>
           ))}
         </div>
@@ -41,80 +77,102 @@ export function RoadMap() {
   );
 }
 
-const dummyContent = [
+const roadmapText = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
-        </p>
-        <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
-        </p>
-      </>
-    ),
-    badge: "React",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Phase 1: Foundation and Research",
+    heading:[
+      {
+          title: "Project Kickoff and Team Formation",
+          line: {
+              1: "Assemble a cross-functional team comprising experts in renewable energy, blockchain, software development, and project management.",
+              2: "Define roles, responsibilities, and communication channels.",
+          }
+      },
+      {
+          title: "Market Research and Feasibility Study",
+          line: {
+              1: "Conduct an in-depth analysis of the green energy market, including demand, supply gaps, and regulatory landscape.",
+              2: "Identify potential regions for GEPS deployment based on energy needs and accessibility.",
+              3: "Smart Contract Deployment & Launch of Presale."
+
+          }
+      },
+    ],
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
-        </p>
-      </>
-    ),
-    badge: "Changelog",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Phase 2: Design and Prototyping ",
+      heading:[
+        {
+            title: "System Architecture Design",
+            line: {
+                  1: "Define the high-level architecture of GEPS, considering scalability, security, and interoperability.",
+                  2: "Specify the components: smart contracts, energy generation units, user interfaces, and data storage."
+              
+            }
+        },
+        {
+            title: "Prototype Development",
+            line: {
+                1: "Build a minimal viable product (MVP) to demonstrate core functionalities.",
+                2: "Develop smart contracts for energy trading, token issuance, and governance."
+
+            }
+        },
+        {
+          title: "Pilot Deployment",
+          line: {
+              1: "Deploy the MVP in a controlled environment (e.g., a small community or pilot site).",
+              2: "Gather feedback from users and stakeholders."
+
+          }
+      },
+    ],
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
-    description: (
-      <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-      </>
-    ),
-    badge: "Launch Week",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Phase 3: Scaling and Integration",
+    heading:[
+      {
+          title: "Scalability Testing",
+          line: {
+              1: "Optimize smart contracts for efficiency and scalability.",
+              2: "Simulate increased demand and validate system performance.",
+          }
+      },
+      {
+          title: "Integration with Energy Grids",
+          line: {
+              1: "Collaborate with local utilities and grid operators to integrate GEPS into existing energy infrastructure.",
+              2: "Ensure seamless energy flow between GEPS and the grid.",
+          }
+      },
+      {
+          title: "Community Outreach and Adoption",
+          line: {
+              1: "Educate potential users about GEPS benefits.",
+              2: "Launch marketing campaigns to attract early adopters.",
+          }
+      },
+    ],
+  },
+  {
+      title: "Phase 4: Full-Scale Deployment and Expansion",
+      heading:[
+        {
+            title: "Full Deployment",
+            line: {
+                  1: "Roll out GEPS to additional regions, targeting underserved communities.",
+                  2: "Monitor system performance and address any issues promptly."
+              
+            }
+        },
+        {
+            title: "Collaboration and Partnerships",
+            line: {
+                1: "Partner with other green energy projects, NGOs, and government bodies.",
+                2: "Explore collaborations for research, funding, and policy advocacy."
+
+            }
+        },
+    ],
   },
 ];
