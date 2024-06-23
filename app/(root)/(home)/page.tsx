@@ -1,7 +1,12 @@
+import { AboutUs } from "@/components/AboutUs"
+import { HomeScreen } from "@/components/Homepage"
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+      <HomeScreen/>
+      <AboutUs/>
+    </>
   )
 }
 

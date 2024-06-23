@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const nunito = Nunito({ subsets: ["latin"] });
+const nunito = Poppins({ 
+  subsets: ["latin"],
+  style: ["normal"],
+  weight: ['700']
+});
 
 export const metadata: Metadata = {
   title: "GEPS: Green Energy Power Station",
@@ -17,7 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
