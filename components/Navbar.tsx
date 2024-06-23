@@ -18,8 +18,9 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
-    const handOutsideClick = (e) => {
-      if(!e.target.closest(".menu-btn") && !e.target.closest("nav")){
+    const handOutsideClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if(!target.closest(".menu-btn") && !target.closest("nav")){
         setMenuOpen(false);
       }
     };
