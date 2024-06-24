@@ -10,6 +10,7 @@ import {
 import Image from "next/image"
 
 import { PurchaseCard } from "../PurchaseCard"
+import Link from "next/link"
 
 export const HeroParallax = ({
     images,
@@ -100,18 +101,21 @@ export const HeroParallax = ({
 export const Content = () => {
     return(
         <section className='text-white pointer-events-auto'>
-            <div className="px-2 pb-8 pt-0 mx-auto max-w-7xl sm:px-3 md:px-6 lg:px-6 lg:pb-24 lg:pt-8">
+            <div className="px-2 pb-8 pt-0 mx-auto max-w-7xl sm:px-3 md:px-2 lg:px-2 lg:pb-24 lg:pt-8">
                 <div className="flex flex-wrap items-center mx-auto max-w-7xl">
                     <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-                        <h1 className="mb-1 text-7xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl pointer-events-auto">
+                        <h1 className="mb-2 text-6xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl pointer-events-auto">
                             Power a Better Life, Let{"'s"} Go Green   
                         </h1>
-                        <p className="mb-6 text-md leading-relaxed text-left text-white pointer-events-auto">
-                            <span className='text-2xl text-semibold'>Invest in Green Energy {"&"} Sustainability.</span><br/>
+                        <div className="mb-1 text-lg leading-relaxed text-left text-white pointer-events-auto font-medium">
+                            <div className='text-3xl font-semibold -mb-4'>Invest in Green Energy {"&"} Sustainability.</div>
+                            <br/>
                             The Green Energy Power Station Token (GEPS) is your gateway to a sustainable future. GEPS Token is a revolutionary token that fuels the growth of green energy production.<br/>
                             <br/>
-                            <span className='text-md'>Support a cleaner planet and a brighter future for generations to come.<br/>Join the Movement. Go Green.</span>
-                        </p>
+                            <div className='text-md -mt-4'>
+                                Support a cleaner planet and a brighter future for generations to come.<br/>Join the Movement. Go Green.
+                            </div>
+                        </div>
                         <div className="mt-0 lg:mt-6 max-w-7xl sm:flex">
                             <div className="mt-3 rounded-lg sm:mt-0">
                                 <button className="pointer-events-auto items-center block px-10 py-4 text-base font-medium text-center text-black transition duration-500 ease-in-out transform bg-white rounded-xl hover:bg-black hover:opacity-50 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
@@ -119,9 +123,11 @@ export const Content = () => {
                                 </button>
                             </div>
                             <div className="mt-3 rounded-lg sm:mt-0 sm:ml-3">
-                                <button className="pointer-events-auto items-center block px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                                    How to buy?
-                                </button>
+                                <Link href='/#how-to-buy'>
+                                    <button className="pointer-events-auto items-center block px-10 py-3.5 text-base font-medium text-center text-white transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                        How to buy?
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

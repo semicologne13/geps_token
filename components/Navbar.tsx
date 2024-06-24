@@ -13,10 +13,10 @@ export default function Navbar() {
 
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "About Us", path: "#about-us" },
+    { title: "About Us", path: "/#about-us" },
     { title: "Whitepaper", path: "/whitepaper" },
-    { title: "Roadmap", path: "#roadmap" },
-    { title: "FAQs", path: "#faqs" },
+    { title: "Roadmap", path: "/#roadmap" },
+    { title: "FAQs", path: "/faqs" },
   ];
 
   useEffect(() => {

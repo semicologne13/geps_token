@@ -22,3 +22,12 @@ html {
       display: block;
     }
   }
+
+  .bg-image{
+    background-image: url('/images/about-us.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: xl;
+  }
+  

@@ -5,12 +5,10 @@ import { LampContainer } from "./ui/lamp";
 import { TracingBeam } from "./ui/tracing-beam";
  
 import { cn } from "@/utils/cn"
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -38,9 +36,9 @@ export function RoadMap({ className, ...props }: CardProps) {
         <div className="max-w-2xl mx-auto antialiased relative">
           {roadmapText.map(({ title, heading }, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <Card className={cn("w-[840px]", className)} {...props}>
+              <Card className={cn("md:w-[900px] w-[500px]", className)} {...props}>
                 <CardHeader>
-                  <CardTitle>{title}</CardTitle>
+                  <CardTitle className="text-[32px] font-bold">{title}</CardTitle>
                   <CardDescription>
                     Percent Completion
                   </CardDescription>
@@ -50,14 +48,14 @@ export function RoadMap({ className, ...props }: CardProps) {
                     heading.map((head, headIndex) => (
                       <div className=" flex items-center space-x-4 rounded-md border p-4" key={headIndex}>
                         <div className="flex-1 space-y-1">
-                          <p className="text-md font-medium leading-none">
+                          <p className="text-[24px] font-semibold leading-none">
                             {head.title}
                           </p>
                           {Object.entries(head.line).map(([key, value]) => (
                             <div key={key} className="mt-2 grid grid-cols-[25px_1fr] items-start pt-2 last:mb-0 last:pb-0">
                               <span className="flex h-2 w-2 translate-y-1 rounded-full bg-green-500" />
                               <div className="space-y-1">
-                                <p className="text-sm font-medium leading-none">
+                                <p className="text-[16px] font-medium leading-none">
                                   {value}
                                 </p>
                               </div>
