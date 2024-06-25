@@ -22,7 +22,7 @@ export const images = [
     {
       title: "Rogue",
       thumbnail:
-          '/images/gep-3.jpg'
+          '/images/gep-10.jpeg'
     },
   
     {
@@ -38,7 +38,7 @@ export const images = [
     {
       title: "Pixel Perfect",
       thumbnail:
-          '/images/gep-6.jpeg'
+          '/images/gep-1.jpeg'
     },
   
     {

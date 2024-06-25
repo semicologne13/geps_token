@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import { WobbleCard } from "./ui/wobble-card";
 
-const HowToBuy = () => {
+const KeyFeatures = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full my-10">
         <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-green-900 min-h-[150px] lg:min-h-[200px] xl:min-h-[50px]">
@@ -98,4 +98,4 @@ const HowToBuy = () => {
   )
 }
 
-export default HowToBuy
+export default KeyFeatures

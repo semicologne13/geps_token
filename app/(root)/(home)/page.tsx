@@ -1,7 +1,7 @@
 import { AboutUs } from "@/components/AboutUs"
 import Feature from "@/components/Feature"
 import { HomeScreen } from "@/components/Homepage"
-import HowToBuy from "@/components/HowToBuy"
+import KeyFeatures from "@/components/KeyFeatures"
 import { RoadMap } from "@/components/RoadMap"
 import Tokenomics from "@/components/Tokenomics"
 
@@ -12,7 +12,7 @@ const page = () => {
       <AboutUs/>
       <Feature/>
       <Tokenomics/>
-      <HowToBuy/>
+      <KeyFeatures/>
       <RoadMap/>
     </>
   )

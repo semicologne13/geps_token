@@ -27,8 +27,8 @@ export function AboutUs() {
               GEPS, a revolutionary energy system, seamlessly integrates solar and wind power while incorporating decentralized trading. 
               </p>
             </div>
-            <div className="mt-10 flex flex-row gap-5 relative max-w-2xl mx-auto">
-              <div className="w-full md:w-[120%] lg:w-[140%] object-cover h-96 sm:h-[500px] sm:w-full bg-image rounded-lg" />
+            <div className="mt-10 flex flex-row gap-5 relative max-w-5xl mx-auto">
+              <div className="w-96 object-cover h-96 sm:h-[500px] sm:w-[1000px] bg-image rounded-lg" />
                 <div className="absolute inset-0 size-full">
                   <div className="flex flex-col justify-end pb-8 items-center size-full">
                     <a

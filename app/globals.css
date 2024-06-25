@@ -24,7 +24,7 @@ html {
   }
 
   .bg-image{
-    background-image: url('/images/about-us.jpeg');
+    background-image: url('/images/about-us.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
