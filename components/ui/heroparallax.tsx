@@ -137,9 +137,7 @@ export const Content = () => {
                                 <div className="absolute top-0 rounded-full -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
                                 <div className="absolute rounded-full -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
                                 <div className="relative">
-                                    <PurchaseCard
-                                        className="object-cover object-center mx-auto rounded-lg shadow-2xl pointer-events-auto"
-                                    />
+                                    <PurchaseCard className="object-cover object-center mx-auto rounded-lg shadow-2xl pointer-events-auto"/>
                                 </div>
                             </div>
                         </div>

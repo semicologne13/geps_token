@@ -1,7 +1,10 @@
 'use client'
-import { Section, Container } from "@/components/craft";
-import Balancer from "react-wrap-balancer";
-import DoughnutChart from "./DoughnutChart";
+import * as Craft from "@/components/craft";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
+import Placeholder from "@/public/images/Doughnut.png";
+import HoverDevCards from "./HoverDevCards";
 
 
 export default function Tokenomics() {
@@ -21,28 +24,21 @@ export default function Tokenomics() {
         style={{ background: "linear-gradient(143.6deg, rgba(87, 255, 151, 0) 20.79%, rgba(121, 249, 157, 0.26) 40.92%, rgba(189, 238, 171, 0) 94.35%)", }}
         className="w-full min-h-screen flex flex-col items-center justify-center relative"
     >
-      <Section id="tokenomics">
-        <Container className="text-white">
-          <h2 className="text-6xl font-bold text-white text-center mb-12">
-              <Balancer>Tokenomics</Balancer>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="flex items-center justify-center">
-                <div style={{ width: '400px', height: '400px' }}>
-                    <DoughnutChart data={data} labels={labels} backgroundColor={backgroundColor} />
-                </div>
-            </div>
-            <div className="grid grid-cols-3 gap-4">
-                {labels.map((label, index) => (
-                    <div key={index} className="bg-white bg-opacity-10 p-4 rounded-lg">
-                        <h3 className="text-sm font-semibold" style={{ color: backgroundColor[index] }}>{label}</h3>
-                        <p className="text-lg font-bold">{data[index].toLocaleString()}</p>
-                    </div>
-                ))}
-            </div>
-          </div> 
-        </Container>
-      </Section>
+      <Craft.Section>
+        <Craft.Container className="grid md:grid-cols-2 md:gap-12 items-stretch">
+        <div className="flex flex-col gap-4 py-8 -ml-10">
+            <h3 className="!my-0 text-8xl font-bold">Tokenomics</h3>
+            <HoverDevCards/>
+          </div>
+          <div className="not-prose relative rounded-lg overflow-hidden mt-10">
+            <Image
+              src={Placeholder}
+              alt="placeholder"
+              className="fill object-cover"
+            />
+          </div>
+        </Craft.Container>
+      </Craft.Section>
     </main>
   );
 }

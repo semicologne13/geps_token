@@ -1,4 +1,5 @@
 import { AboutUs } from "@/components/AboutUs"
+import { AlertDialogCard } from "@/components/AlertDialogCard"
 import Feature from "@/components/Feature"
 import { HomeScreen } from "@/components/Homepage"
 import KeyFeatures from "@/components/KeyFeatures"

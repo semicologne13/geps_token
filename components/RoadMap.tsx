@@ -34,13 +34,13 @@ export function RoadMap({ className, ...props }: CardProps) {
       </LampContainer>
       <TracingBeam className="px-6 relative z-0 -mt-96 -top-24">
         <div className="max-w-2xl mx-auto antialiased relative">
-          {roadmapText.map(({ title, heading }, index) => (
+          {roadmapText.map(({ title, heading, progress }, index) => (
             <div key={`content-${index}`} className="mb-10">
               <Card className={cn("md:w-[900px] w-[500px]", className)} {...props}>
                 <CardHeader>
                   <CardTitle className="text-[32px] font-bold">{title}</CardTitle>
                   <CardDescription>
-                    Percent Completion
+                    {progress}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="grid gap-4">
@@ -96,6 +96,27 @@ const roadmapText = [
           }
       },
     ],
+    progress: (
+      <div className="space-y-5">
+        <div className="flex items-center gap-x-3 whitespace-nowrap">
+          <div
+            className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700"
+            role="progressbar"
+            aria-valuenow={100}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="flex flex-col justify-center rounded-full overflow-hidden border-white border-2 bg-green-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-green-500"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="w-10 text-end">
+            <span className="text-lg text-gray-800 dark:text-white">100%</span>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
       title: "Phase 2: Design and Prototyping ",
@@ -125,6 +146,27 @@ const roadmapText = [
           }
       },
     ],
+    progress: (
+      <div className="space-y-5">
+        <div className="flex items-center gap-x-3 whitespace-nowrap">
+          <div
+            className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700"
+            role="progressbar"
+            aria-valuenow={75}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="flex flex-col justify-center rounded-full overflow-hidden border-white border-2 bg-yellow-500 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-yellow-500"
+              style={{ width: "75%" }}
+            />
+          </div>
+          <div className="w-10 text-end">
+            <span className="text-lg text-gray-800 dark:text-white">75%</span>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     title: "Phase 3: Scaling and Integration",
@@ -151,6 +193,28 @@ const roadmapText = [
           }
       },
     ],
+    
+    progress: (
+      <div className="space-y-5">
+        <div className="flex items-center gap-x-3 whitespace-nowrap">
+          <div
+            className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700"
+            role="progressbar"
+            aria-valuenow={0}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="flex flex-col justify-center rounded-full overflow-hidden border-white border-2 bg-red-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-red-500"
+              style={{ width: "0%" }}
+            />
+          </div>
+          <div className="w-10 text-end">
+            <span className="text-lg text-gray-800 dark:text-white">0%</span>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
       title: "Phase 4: Full-Scale Deployment and Expansion",
@@ -172,5 +236,26 @@ const roadmapText = [
             }
         },
     ],
+    progress: (
+      <div className="space-y-5">
+        <div className="flex items-center gap-x-3 whitespace-nowrap">
+          <div
+            className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700"
+            role="progressbar"
+            aria-valuenow={0}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="flex flex-col justify-center rounded-full overflow-hidden border-white border-2 bg-red-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-red-500"
+              style={{ width: "0%" }}
+            />
+          </div>
+          <div className="w-10 text-end">
+            <span className="text-lg text-gray-800 dark:text-white">0%</span>
+          </div>
+        </div>
+      </div>
+    )
   },
 ];

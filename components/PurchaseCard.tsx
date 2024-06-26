@@ -27,7 +27,7 @@ export function PurchaseCard({ className, ...props }: CardProps) {
                 <div className="text-center items-center">
                     <CardTitle>GEPS Token Pre-Sale</CardTitle>
                 </div>
-                <TimeCountdown targetDate="2024-12-31T23:59:59"/>
+                <TimeCountdown targetDate="2024-06-28T23:59:59"/>
                 <div className="space-y-5">
                     <div className="flex items-center gap-x-3 whitespace-nowrap">
                         <div

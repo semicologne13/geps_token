@@ -12,12 +12,12 @@ export const images = [
     {
       title: "Moonbeam",
       thumbnail:
-          '/images/gep-1.jpeg',
+          '/images/gep-2.jpeg',
     },
     {
       title: "Cursor",
       thumbnail:
-          '/images/gep-2.jpeg',
+          '/images/gep-11.jpeg',
     },
     {
       title: "Rogue",
@@ -44,7 +44,7 @@ export const images = [
     {
       title: "Algochurn",
       thumbnail:
-          '/images/gep-7.jpeg'
+          '/images/geps-12.png'
     },
     {
       title: "Aceternity UI",
@@ -54,7 +54,7 @@ export const images = [
     {
       title: "Tailwind Master Kit",
       thumbnail:
-          '/images/gep-9.jpeg'
+          '/images/gep-7.jpeg'
     },
     {
       title: "SmartBridge",
