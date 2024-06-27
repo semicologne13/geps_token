@@ -6,9 +6,9 @@ import { WobbleCard } from "./ui/wobble-card";
 const KeyFeatures = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full my-10">
-        <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-green-900 min-h-[150px] lg:min-h-[200px] xl:min-h-[50px]">
+        <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-green-900 min-h-[100px] lg:min-h-[200px] xl:min-h-[50px]">
         <div>
-          <h2 className="text-left text-balance text-xl md:text-3xl lg:text-5xl font-semibold tracking-[-0.015em] text-white">
+          <h2 className="text-left text-balance text-3xl md:text-3xl lg:text-5xl font-semibold tracking-[-0.015em] text-white">
             Why $GEPS is Special 
           </h2>
           <p className="mt-2 text-left text-2xl text-neutral-200">

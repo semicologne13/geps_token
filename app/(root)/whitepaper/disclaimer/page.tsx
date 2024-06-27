@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Disclaimer
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <span className="text-2xl">DYOR</span>
                 <br/>
                 The information contained in this whitepaper is for general informational purposes only and should not be relied upon as professional advice. Cryptocurrencies are volatile, and participants should conduct due diligence and Do Your Own Research (DYOR). You should always consult your independent advisors concerning legal, tax and regulatory implications in your country of residency. We cannot guarantee specific outcomes or market performance. Participation is voluntary and at your own risk. 

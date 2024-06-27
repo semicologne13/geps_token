@@ -6,7 +6,7 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-8">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-8">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             <img
               className="inline my-auto w-10 md:w-20 md:-mt-6 -mt-3"
@@ -18,14 +18,14 @@ const page = () => {
             GEPS Whitepaper
           </h1>
           <div className="md:text-lg">
-            <p className="hidden md:block">
+            <p className="block">
               Leveraging our extensive experience collaborating with established companies and prominent blockchain initiatives, Green Energy Power Station (GEPS) presents a groundbreaking clean energy solution. GEPS seamlessly integrates solar and wind power generation with a decentralized trading platform, fostering a revolutionary energy ecosystem.
             </p>
             <div className="md:flex grid gap-2">
-              <p className="opacity-50">
+              <div className="opacity-50">
                 <br/>
                 For a comprehensive exploration of GEPS's vision to become a global leader in decentralized clean energy solutions, we invite you to review our detailed Whitepaper.
-              </p>
+              </div>
             </div>
             <p className="text-sm mt-5">
               <Link

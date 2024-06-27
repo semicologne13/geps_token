@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Security and Compliance
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
               <span className="font-normal text-xl">Security is paramount at GEPS. Our smart contracts will be audited by leading security firms to ensure compliance with the highest standards. Additionally, we are proactive in our approach to regulatory compliance, engaging with policymakers to ensure that GEPS operates within the frameworks of international & local regulations.</span>
               <br/><br/>
               <span className="font-noraml text-xl">Maintaining the highest standards of security, GEPS mandates Know-Your-Customer (KYC) and Anti-Money Laundering (AML) compliance. This ensures a secure and compliant environment for users mitigating risks associated with fraudulent activities.</span>

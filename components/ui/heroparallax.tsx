@@ -101,16 +101,16 @@ export const HeroParallax = ({
 export const Content = () => {
     return(
         <section className='text-white pointer-events-auto'>
-            <div className="px-2 pb-8 pt-0 mx-auto max-w-7xl sm:px-3 md:px-2 lg:px-2 lg:pb-24 lg:pt-8">
-                <div className="flex flex-wrap items-center mx-auto max-w-7xl">
-                    <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-                        <h1 className="mb-2 text-6xl font-bold leading-none tracking-tighter text-white md:text-7xl lg:text-5xl pointer-events-auto">
+            <div className="px-2 pb-8 pt-0 mx-auto max-w-7xl md:px-2 lg:px-2 lg:pb-24 lg:pt-8">
+                <div className="flex flex-col lg:flex-row items-center mx-auto max-w-7xl">
+                    <div className="flex flex-col items-start mt-12 mb-16 text-left lg:w-1/2 lg:pr-6 xl:pr-24 md:mb-0 xl:mt-0 sm:mx-6">
+                        <h1 className="mb-2 text-4xl sm:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-white">
                             Power a Better Life, Let{"'s"} Go Green   
                         </h1>
                         <div className="mb-1 text-lg leading-relaxed text-left text-white pointer-events-auto font-medium">
-                            <div className='text-3xl font-semibold -mb-4'>Invest in Green Energy {"&"} Sustainability.</div>
+                            <div className='text-2xl sm:text-3xl font-semibold -mb-4'>Invest in Green Energy {"&"} Sustainability.</div>
                             <br/>
-                            The Green Energy Power Station Token (GEPS) is your gateway to a sustainable future. GEPS Token is a revolutionary token that fuels the growth of green energy production.<br/>
+                                The Green Energy Power Station ($GEPS) Token is your gateway to a sustainable future. With GEPS, you’re not just investing; you’re powering a cleaner, greener future. Say goodbye to carbon footprints and hello to renewable energy projects<br/>
                             <br/>
                             <div className='text-md -mt-4'>
                                 Support a cleaner planet and a brighter future for generations to come.<br/>Join the Movement. Go Green.
@@ -131,14 +131,12 @@ export const Content = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-                        <div>
-                            <div className="relative w-full max-w-lg">
-                                <div className="absolute top-0 rounded-full -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-                                <div className="absolute rounded-full -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
-                                <div className="relative">
-                                    <PurchaseCard className="object-cover object-center mx-auto rounded-lg shadow-2xl pointer-events-auto"/>
-                                </div>
+                    <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
+                        <div className="relative w-full max-w-lg mx-auto">
+                            <div className="absolute top-0 rounded-full -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+                            <div className="absolute rounded-full -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
+                            <div className="relative">
+                                <PurchaseCard className="object-cover object-center mx-auto rounded-lg shadow-2xl pointer-events-auto"/>
                             </div>
                         </div>
                     </div>

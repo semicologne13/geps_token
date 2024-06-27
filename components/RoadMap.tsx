@@ -36,7 +36,7 @@ export function RoadMap({ className, ...props }: CardProps) {
         <div className="max-w-2xl mx-auto antialiased relative">
           {roadmapText.map(({ title, heading, progress }, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <Card className={cn("md:w-[900px] w-[500px]", className)} {...props}>
+              <Card className={cn("lg:w-[900px] w-[600px]", className)} {...props}>
                 <CardHeader>
                   <CardTitle className="text-[32px] font-bold">{title}</CardTitle>
                   <CardDescription>

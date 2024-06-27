@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             $GEPS Market Focus: Where Clean Energy Matters Most
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <span className="text-xl font-semibold">High Electricity Costs? GEPS to the Rescue!</span><br/>
                 <div className="mt-1 text-lg">
                     <span className="font-semibold">Scenario</span>: Imagine living in a region where electricity bills drain your wallet. GEPS targets precisely these areas.

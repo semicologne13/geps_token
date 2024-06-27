@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-8">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-8">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Introduction
           </h1>
           <div className="md:text-lg">
-            <p className="hidden md:block">
+            <p className="md:block">
                 <span className="font-semibold text-xl">Grean Energy Power Station</span><br/>
                 In an era marked by escalating electricity demands and environmental consciousness, the Green Energy Power Station (GEPS) emerges as a pioneering force. By seamlessly integrating the principles of renewable energy with the transformative capabilities of blockchain technology, GEPS aims to revolutionize how we meet our electricity needs. Let’s delve into the core tenets of this groundbreaking initiative.
                 <br/><br/>
@@ -23,7 +23,7 @@ const page = () => {
                 <br/><br/>
                 With renewable resources with almost zero pollution.
                 <br/>
-                GEPS will provide highly efficient power source at almost 50% less cost than traditional electricity that people consume. It will not only provide cheap electricity but also ihghly mobile that can be used at almost any location that is still not connected to electricity.
+                GEPS will provide highly efficient power source at almost 50% less cost than traditional electricity that people consume. It will not only provide cheap electricity but also highly mobile that can be used at almost any location that is still not connected to electricity.
                 <br/><br/>
                 This whitepaper aims to unravel the intricate layers of GEPS offering users an in-depth understanding of its capabilities.
             </p>

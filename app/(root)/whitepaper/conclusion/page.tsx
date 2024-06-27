@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Conclusion
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <span className="font-normal text-xl">GEPS is poised to be a leading force in the Renewable Energy space, pioneering a new era where anyone, anywhere can participate in the vast opportunities offered by Green Energy advancement. We envision a world, where the GEPS token becomes synonymous with green energy, a key that unlocks the potential of sustainable growth and enables individuals to fight pollution and climate changes, one of the most pressing needs of humanity.</span>
                 <br/><br/>
                 <span className="font-noraml text-xl">Through innovation, integrity and a commitment to our users, we aspire to be the catalyst for a global Green energy revolution that bridges the gap between traditional and decentralized energy needs- fostering a future of limitless possibilities and energy freedom.</span>

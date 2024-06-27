@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-8">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-8">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             What is $GEPS(Green Energy Power Station)?
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 At GEPS, our mission is to empower individuals globally by providing a unique decentralized standalone Energy power station, that seamlessly converts natural wind and solar energy into electricity and provide cheapest possible electricity for various human needs without creating pollution and environmental damage. We strive to break down barriers, democratize access to clean energy and foster inclusion of poorest of the poor, through our innovative electricity generation and distribution platform powered by the GEPS.
                 <br/><br/>
                 <span className="font-semibold text-2xl">Key Features</span><br/>

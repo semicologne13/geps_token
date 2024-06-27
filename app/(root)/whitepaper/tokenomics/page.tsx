@@ -10,12 +10,12 @@ const page = () => {
   return (
     <Craft.Section className="not-prose">
       <Craft.Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Tokenomics
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <div className="grid md:grid-cols-2 md:gap-12 items-stretch">
                     <div className="flex flex-col gap-4 py-8">
                         <HoverDevCards/>

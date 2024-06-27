@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             What’s so special about $GEPS ?
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <span className="text-2xl">“Participating in the GEPS presale offers a unique blend of robust security, transparent processes, and significant growth potential.”</span>
                 <br/><br/>
                 <span className="font-semibold text-xl">Fixed & Very Limited Supply </span><br/>

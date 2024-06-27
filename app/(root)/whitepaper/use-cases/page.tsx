@@ -6,12 +6,12 @@ const page = () => {
   return (
     <Section className="not-prose">
       <Container>
-        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 md:pl-10 pl-8 flex flex-col gap-6">
+        <div className="w-full h-full m-auto max-w-5xl md:py-10 py-4 lg:pl-32 md:pl-20 pl-8 flex flex-col gap-6">
           <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
             Use Cases of $GEPS Token 
           </h1>
           <div className="md:text-lg">
-            <div className="hidden md:block">
+            <div className="md:block">
                 <span className="font-semibold text-xl">GEPS tokens are designed with multifaceted use cases within the GEPS ecosystem. They serve as the key to participating in a range of activities, including but not limited to:</span><br/><br/>
                 <span className="font-semibold text-xl">Decentralized Trading</span><br/>
                 <ul className="marker:text-green-600 list-disc ps-5 space-y-2 dark:text-white">
