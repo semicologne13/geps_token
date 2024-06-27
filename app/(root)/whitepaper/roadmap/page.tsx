@@ -200,7 +200,7 @@ const roadmapText = [
     },
   ];
 
-export default function page({ className, ...props }: CardProps) {
+  const page = ({ className, ...props }: CardProps) => {
   return (
     <Craft.Section className="not-prose">
       <Craft.Container>
@@ -273,3 +273,5 @@ export default function page({ className, ...props }: CardProps) {
     </Craft.Section>
   );
 };
+
+export default page;
