@@ -33,13 +33,13 @@ const page = () => {
                 className="flex items-center justify-center gap-x-1 py-3 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
               >
                 <LuArrowLeftCircle/>
-                Previous: Executive Summary
+                Previous: Executive 
               </Link>
               <Link
-                href="/whitepaper/geps"
+                href="/whitepaper/tokenomics"
                 className="flex items-center justify-center gap-x-1 py-3 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
               >
-                Next: What is $GEPS
+                Next: Tokenomics
                 <LuArrowRightCircle/>
               </Link>
             </p>

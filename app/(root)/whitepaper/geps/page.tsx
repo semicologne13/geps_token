@@ -63,11 +63,11 @@ const page = () => {
             </div>
             <p className="text-sm mt-5 flex flex-row gap-6">
             <Link
-                href="/whitepaper/introduction"
+                href="/whitepaper/roadmap"
                 className="flex items-center justify-center gap-x-1 py-3 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
               >
                 <LuArrowLeftCircle/>
-                Previous: Introduction
+                Previous: Roadmap
               </Link>
               <Link
                 href="/whitepaper/use-cases"
