@@ -12,9 +12,6 @@ import {
 import { cn } from "@/utils/cn"
 import { LuArrowLeftCircle, LuArrowRightCircle } from "react-icons/lu";
 
-type CardProps = React.ComponentProps<typeof Card>
-
-
 const roadmapText = [
     {
       title: "Phase 1: Foundation and Research",
@@ -200,7 +197,7 @@ const roadmapText = [
     },
   ];
 
-  const page = ({ className, ...props }: CardProps) => {
+const page = () => {
   return (
     <Craft.Section className="not-prose">
       <Craft.Container>
@@ -212,12 +209,11 @@ const roadmapText = [
           {roadmapText.map(({ title, heading, progress }, index) => (
             <div key={`content-${index}`} className="mb-10">
               <Card 
-                className={cn("lg:w-[900px] xl:w-[900px]", className)} 
+                className={cn("lg:w-[900px] xl:w-[900px]")} 
                 style={{
                   maxWidth: "calc(100vw - 50px)",
                   width: "100%",
                 }}
-                {...props}
               >
                 <CardHeader>
                   <CardTitle className="text-[32px] text-center items-center font-bold">{title}</CardTitle>
