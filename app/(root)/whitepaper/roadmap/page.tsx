@@ -197,7 +197,7 @@ const roadmapText = [
     },
   ];
 
-const page = () => {
+export function Roadmap(){
   return (
     <Craft.Section className="not-prose">
       <Craft.Container>
@@ -270,4 +270,10 @@ const page = () => {
   );
 };
 
+
+const page = () => {
+  return (
+    <Roadmap/>
+  )
+}
 export default page;
